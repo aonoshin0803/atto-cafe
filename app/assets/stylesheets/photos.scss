@@ -1,0 +1,205 @@
+// ここからスマホ用サイズ-----------------------------------------------------------------------------
+@media(max-width:767px){
+
+
+
+
+}
+// ここまでがスマホ用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからタブレット用サイズ-----------------------------------------------------------------------------
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+}
+// ここまでがタブレット用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからPC用サイズ-----------------------------------------------------------------------------
+@media(min-width:1025px){
+
+// [photo-show]
+.photo-show{
+    padding:0;
+    margin:0;
+    background-color:#eee;
+}
+
+.photo-show-title{
+    text-align:center;
+}
+
+.photo-show-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.photo-show-main{
+    padding:0;
+    margin:0 auto 100px;
+    width:60%;
+    text-align:center;
+    border-bottom:3px double #003333;
+    background-color:#fff;
+}
+
+.photo-show-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:400px;
+}
+
+.photo-show-img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:400px;
+}
+
+.photo-show-time{
+    padding:0;
+    margin:0;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.photo-show-time p{
+    padding:5px 0;
+    margin:0;
+}
+
+.photo-show-photo-btn ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.photo-show-photo-btn li{
+    padding:0;
+    margin:0;
+}
+
+.photo-show-photo-btn li:nth-of-type(1) a{
+    padding:5px 0;
+    margin:0;
+    text-decoration:none;
+    background-color:#f00;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+    color:#fff;
+    display:block;
+}
+
+.photo-show-photo-btn li:nth-of-type(1) a:hover{
+    transition:0.5s;
+    background-color:#ccc;
+    color:#f00;
+}
+
+.photo-show-photo-btn li:nth-of-type(2) a{
+    color:#003333;
+}
+
+.photo-show-photo-btn li:nth-of-type(2) a:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+
+// [photo-new]
+.photo-new{
+    padding:0;
+    margin:0;
+}
+
+.photo-new-title{
+    text-align:center;
+}
+
+.photo-new-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.photo-new-main{
+    padding:0;
+    margin:0 auto 100px;
+    width:60%;
+    text-align:center;
+    border-bottom:3px double #003333;
+}
+
+.photo-new-main p{
+    padding:0;
+    margin:40px 0 0 0;
+    color:#003333;
+}
+
+.photo-new-main span{
+    padding:0;
+    margin:0 0 0 5px;
+    color:#f00;
+}
+
+.photo-new-btn{
+    padding:0;
+    margin:60px 0 0;
+}
+
+.photo-new-btn ul{
+    padding:10px 0;
+    margin:0;
+    list-style:none;
+    border-top:1px dotted #003333;
+}
+
+.photo-new-btn li{
+    padding:0;
+    margin:0 0 20px 0;
+}
+
+.photo-new-btn li:nth-of-type(2n){
+    margin:0;
+}
+
+.photo-new-btn-1{
+    padding:5px 0;
+    margin:0 auto;
+    width:40%;
+    color:#fff;
+    background-color:#003333;
+    cursor:pointer;
+}
+
+.photo-new-btn-1:hover{
+    transition:0.3s;
+    background-color:#8fbc8f;
+}
+
+.photo-new-btn-2{
+    color:#003333;
+}
+
+
+
+}
+// ここまでがPC用サイズ-----------------------------------------------------------------------------

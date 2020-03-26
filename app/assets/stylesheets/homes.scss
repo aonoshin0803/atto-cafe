@@ -1,0 +1,97 @@
+// ここからスマホ用サイズ-----------------------------------------------------------------------------
+@media(max-width:767px){
+
+
+
+
+}
+// ここまでがスマホ用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからタブレット用サイズ-----------------------------------------------------------------------------
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+}
+// ここまでがタブレット用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからPC用サイズ-----------------------------------------------------------------------------
+@media(min-width:1025px){
+
+.home-index{
+    padding:0;
+    margin:0;
+    height:600px;
+    width:100%;
+    background-position:center 60%;
+    background-image:url(/assets/home-top-image.jpg);
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    opacity:0.7;
+}
+
+.home-index-title{
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+.home-index-title h1{
+    padding:0;
+    margin:0;
+    font-size:70px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -500%);
+    color:#003333;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.home-index-title h2{
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -900%);
+    color:#003333;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.home-index-btn{
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, 800%);
+}
+
+.home-index-btn a{
+    padding:10px 100px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    font-weight:bold;
+    background-color:#fff;
+    border:1px solid #66FF99;
+}
+
+.home-index-btn a:hover{
+    transition:0.4s;
+    background-color:#66FF99;
+}
+
+}
+// ここまでがPC用サイズ-----------------------------------------------------------------------------

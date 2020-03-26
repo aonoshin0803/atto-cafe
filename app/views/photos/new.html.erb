@@ -1,0 +1,19 @@
+<div class="photo-new">
+    <div class="photo-new-title">
+        <h2>写真新規投稿</h2>
+    </div>
+    <div class="photo-new-main">
+        <%= form_for [@shop, @photo] do |p| %>
+          <%= p.hidden_field :user_id, required: true, :value => current_user.id %>
+          <%= p.hidden_field :shop_id, require: true, :value => @shop.id %>
+          <p>店舗イメージ画像<span>※必須</span></p>
+          <%= p.file_field :image, :class => "photo-new-image" %>
+          <div class="photo-new-btn">
+              <ul>
+                  <li><%= p.submit "投稿する", :class => "photo-new-btn-1", data: {confirm: "投稿してもよろしいですか？"} %></li>
+                  <li><%= link_to "cafeの詳細に戻る", "/shops/#{@shop.id}", :class => "photo-new-btn-2" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

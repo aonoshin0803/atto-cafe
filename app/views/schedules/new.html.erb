@@ -1,0 +1,26 @@
+<div class="schedule-new">
+    <div class="schedule-new-title">
+        <h2>新規スケジュール計画</h2>
+    </div>
+    <div class="schedule-new-shop">
+        <p>選択中のcafe</p>
+        <span><%= @shop.name %></span>
+    </div>
+    <div class="schedule-new-main">
+        <%= form_for [@shop, @schedule] do |s| %>
+          <%= s.hidden_field :user_id, required: true, :value => current_user.id %>
+          <p>日付<span>※必須</span></p>
+          <%= s.date_field :join_date, :class => "schedule-new-date" %>
+          <p>時間帯<span>※必須</span></p>
+          <%= s.time_field :start_time, :class => "schedule-new-time" %> ～ <%= s.time_field :end_time, :class => "schedule-new-time" %>
+          <p>コメント（150文字以内）</p>
+          <%= s.text_area :content, :class => "schedule-new-content" %>
+          <div class="schedule-new-btn">
+              <ul>
+                  <li><%= s.submit "スケジュールに追加する", :class => "schedule-new-btn-1", data: {confirm: "追加してもよろしいですか？"} %></li>
+                  <li><%= link_to "cafe一覧へ", "/shops", :class => "schedule-new-btn-2" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

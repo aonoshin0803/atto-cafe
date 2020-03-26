@@ -1,0 +1,88 @@
+<div class="user-show">
+    <div class="user-show-title">
+        <h2>プロフィール</h2>
+    </div>
+    <div class="user-show-name">
+        <h2><%= @user.name %>さん</h2>
+    </div>
+    <div class="clearfix user-show-main">
+        <div class="user-show-image">
+            <% if @user.image.present? %>
+              <%= image_tag @user.image, :class => "user-image" %>
+            <% else %>
+              <%= image_tag "default-user-image.jpg", :class => "user-image" %>
+            <% end %>
+        </div>
+        <div class="user-show-detail">
+            <ul>
+                <li>年齢：<%= @user.age %>歳</li>
+                <li>性別：<%= @user.gender %></li>
+                <li>職業：<%= @user.work %></li>
+                <li><%= simple_format(@user.content) %></li>
+            </ul>
+        </div>
+    </div>
+    <% if @user.id == current_user.id %>
+       <div class="user-show-edit">
+           <%= link_to "プロフィールを編集する", "/users/#{@user.id}/edit" %>
+       </div>
+       <% if @user.id == current_user.id %>
+         <div class="user-show-destroy">
+             <%= link_to "退会する", "/users/#{@user.id}", method: "delete", data: {confirm: "本当に退会してもよろしいですか？"} %>
+         </div>
+       <% end %>
+    <% else %>
+      <div class="user-show-chat">
+          <%= link_to "メッセージを送る", "/users/#{@user.id}/messages/new" %>
+      </div>
+    <% end %>
+    <div class="user-show-schedule">
+        <div class="user-show-schedule-title">
+            <h2>スケジュール</h2>
+        </div>
+        <% if @user.id == current_user.id %>
+          <div class="user-show-schedule-btn">
+              <%= link_to "cafeを選択してスケジュールを立てる", "/shops" %>
+          </div>
+        <% end %>
+        <div class="user-show-schedule-main">
+            <% if @schedules.present? %>
+              <% @schedules.each do |s| %>
+                <div class="user-show-schedule-main-detail">
+                    <div class="user-show-schedule-index-detail-date">
+                        <ul>
+                            <li>【滞在日】<%= s.join_date.strftime("%Y/%m/%d") %></li>
+                            <li>【滞在時間】<%= s.start_time.strftime("%H:%M") %> ～ <%= s.end_time.strftime("%H:%M") %></li>
+                        </ul>
+                    </div>
+                    <div class="user-show-schedule-index-detail-content">
+                        <% if s.content.present? %>
+                          <p class="present"><%= s.content %></p>
+                        <% else %>
+                          <p class="empty">詳細はありません。</p>
+                        <% end %>
+                    </div>
+                    <div class="user-show-schedule-index-detail-other">
+                        <ul>
+                            <li>予定計画者：<%= link_to @user.name, "/users/#{s.user_id}" %></li>
+                            <li>店舗名：<%= link_to Shop.find_by(id: s.shop_id).name, "/shops/#{s.shop_id}" %></li>
+                        </ul>
+                    </div>
+                    <% if s.user_id == current_user.id %>
+                      <div class="user-show-schedule-index-detail-btn">
+                          <ul>
+                              <li><%= link_to "変更する", "/shops/#{s.shop_id}/schedules/#{s.id}/edit" %></li>
+                              <li><%= link_to "削除する", "/shops/#{s.shop_id}/schedules/#{s.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                          </ul>
+                      </div>
+                    <% end %>
+                </div>
+              <% end %>
+            <% else %>
+              <div class="user-show-schedule-main-empty">
+                  <p>現在、スケジュールはありません。</p>
+              </div>
+            <% end %>
+        </div>
+    </div>
+</div>

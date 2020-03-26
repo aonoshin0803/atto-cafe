@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="clearfix">
+        <div class="navbar-title">
+            <% if user_signed_in? %>
+              <h2><%= link_to "@cafe", "/users/#{current_user.id}" %><%= link_to "/users/#{current_user.id}" do %><i class="fas fa-coffee"></i><% end %></h2>
+            <% else %>
+              <h2><%= link_to "@cafe", "/" %><%= link_to "/" do %><i class="fas fa-coffee"></i><% end %></h2>
+            <% end %>
+            <p>人生を変えるキッカケはカフェから</p>
+        </div>
+        <div class="navbar-list">
+            <ul>
+                <% if user_signed_in? %>
+                  <li><%= link_to "マイページ", "/users/#{current_user.id}" %></li>
+                  <li><%= link_to "メッセージ一覧", "/users/#{current_user.id}/messages" %></li>
+                  <li><%= link_to "ユーザー一覧", "/users" %></li>
+                  <li><%= link_to "cafe一覧", "/shops" %></li>
+                  <li><%= link_to "スケジュール一覧", "/schedules" %></li>
+                  <li><%= link_to "ログアウト", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしてもよろしいですか？"} %></li>
+                  <% if current_user.id == 0 %>
+                    <li><%= link_to "お問い合わせ一覧", "/inquiries", :class => "admin-btn" %></li>
+                  <% end %>
+                <% else %>
+                  <li><%= link_to "新規登録", "/users/sign_up" %></li>
+                  <li><%= link_to "ログイン", "/users/sign_in" %></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>

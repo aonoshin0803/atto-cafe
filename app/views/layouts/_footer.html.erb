@@ -1,0 +1,18 @@
+<div class="footer">
+    <div class="clearfix">
+        <div class="footer-title">
+            <% if user_signed_in? %>
+              <h2><%= link_to "@cafe", "/users/#{current_user.id}" %><%= link_to "/users/#{current_user.id}" do %><i class="fas fa-coffee"></i><% end %></h2>
+            <% else %>
+              <h2><%= link_to "@cafe", "/" %><%= link_to "/" do %><i class="fas fa-coffee"></i><% end %></h2>
+            <% end %>
+            <p>人生を変えるキッカケはカフェから</p>
+        </div>
+        <div class="footer-text">
+            <ul>
+                <li>Copyright @ 2020 Shin Aono</li>
+                <li>ご質問等は<%= link_to "こちらから", "/inquiries/new" %>お問い合わせください。</li>
+            </ul>
+        </div>
+    </div>
+</div>

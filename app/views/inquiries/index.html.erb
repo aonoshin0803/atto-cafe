@@ -1,0 +1,41 @@
+<div class="inquiry-index">
+    <div class="inquiry-index-title">
+        <h2>お問い合わせ一覧</h2>
+    </div>
+    <div class="inquiry-index-main">
+        <% if @inquiries.present? %>
+          <% @inquiries.each do |i| %>
+            <div class="inquiry-index-detail">
+                <div class="inquiry-index-content-1">
+                    <ul>
+                        <% if i.user_id == nil %>
+                          <li class="unmember">名前：<%= i.name %>さん（非メンバー）</li>
+                        <% else %>
+                          <li class="member">名前：<%= i.name %>さん（メンバー）</li>
+                        <% end %>
+                        <li>メールアドレス：<%= i.email %></li>
+                    </ul>
+                </div>
+                <div class="inquiry-index-content-2">
+                    <p><%= simple_format(i.content) %></p>
+                </div>
+                <div class="inquiry-index-content-3">
+                    <p>受信日：<%= i.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+                </div>
+                <div class="inquiry-index-btn">
+                    <ul>
+                        <li><%= link_to "全文を見る", "/inquiries/#{i.id}" %></li>
+                        <li><%= link_to "削除する", "/inquiries/#{i.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                    </ul>
+                </div>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="inquiry-index-empty">
+              <% if current_user.id == 0 %>
+                <p>現在、お問い合わせはありません。</p>
+              <% end %>
+          </div>
+        <% end %>
+    </div>
+</div>

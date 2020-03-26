@@ -1,0 +1,32 @@
+<div class="user-index">
+    <div class="user-index-title">
+        <h2>ユーザー一覧</h2>
+    </div>
+    <div class="user-index-main">
+    <% @users.each do |u| %>
+      <div class="user-index-list">
+          <div class="user-index-image">
+              <% if u.image.present? %>
+                <%= image_tag u.image, :class => "user-index-img" %>
+              <% else %>
+                <%= image_tag "default-user-image", :class => "user-index-img" %>
+              <% end %>
+          </div>
+          <div class="user-index-detail">
+              <ul>
+                  <li>名前：<%= u.name %></li>
+                  <li>年齢：<%= u.age %>歳</li>
+                  <li>性別：<%= u.gender %></li>
+                  <li>職業：<%= u.work %></li>
+              </ul>
+          </div>
+          <div class="user-index-content">
+              <%= u.content %>
+          </div>
+          <div class="user-index-btn">
+              <%= link_to "プロフィールを見る", "/users/#{u.id}" %>
+          </div>
+      </div>
+    <% end %>
+    </div>
+</div>

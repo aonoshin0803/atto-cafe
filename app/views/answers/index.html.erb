@@ -1,0 +1,32 @@
+<div class="answer-index">
+    <div class="answer-index-title">    
+        <h2><%= @inquiry.name %>さんへの回答一覧</h2>
+    </div>
+    <div class="answer-index-main">
+        <% if @answers.present? %>
+          <% @answers.each do |a| %>
+            <div class="answer-index-detail">
+                <div class="answer-index-content-1">
+                    <p><%= simple_format(a.content) %></p>
+                </div>
+                <div class="answer-index-content-2">
+                    <p>回答日時：<%= a.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+                </div>
+            </div>
+            <div class="answer-index-btn">
+                <ul>
+                    <li><%= link_to "本文を見る", "/inquiries/#{a.inquiry_id}/answers/#{a.id}" %></li>
+                    <li><%= link_to "削除する", "/inquiries/#{a.inquiry_id}/answers/#{a.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                </ul>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="answer-index-empty">
+              <p>現在、回答済みメールはありません。</p>
+          </div>
+        <% end %>
+        <div class="answer-index-inquiry-btn">
+            <%= link_to "お問い合わせ一覧へ", "/inquiries" %>
+        </div>
+    </div>
+</div>

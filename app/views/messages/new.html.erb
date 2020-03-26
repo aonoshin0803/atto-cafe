@@ -1,0 +1,27 @@
+<div class="message-new">
+    <div class="message-new-title">
+        <h2>メッセージ作成</h2>
+    </div>
+    <div class="message-new-main">
+        <div class="message-new-name">
+            <ul>
+                <li>FROM：<%= User.find_by(id: current_user.id).name %></li>
+                <li>TO：<%= User.find_by(id: @user.id).name %></li>
+            </ul>
+        </div>
+        <%= form_for [@user, @message],:url => {:action => :create} do |m| %>
+          <%= m.hidden_field :user_id, required: true, :value => current_user.id %>
+          <%= m.hidden_field :from_id, required: true, :value => current_user.id %>
+          <p>タイトル（30文字以内）</p>
+          <%= m.text_field :title, :class => "message-new-title-main" %>
+          <p>本文<span>※必須[500文字以内]</span></p>
+          <%= m.text_area :content, :class => "message-new-content" %>
+          <div class="message-new-btn">
+              <ul>
+                  <li><%= m.submit "送信する", :class => "message-new-btn-1", data: {confirm: "送信してもよろしいですか？"} %></li>
+                  <li><%= link_to "戻る", "/users/#{@user.id}", :class => "message-new-btn-2" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

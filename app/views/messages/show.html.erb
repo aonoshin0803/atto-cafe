@@ -1,0 +1,33 @@
+<div class="message-show">
+    <div class="message-show-title">
+        <h2>メッセージ全文</h2>
+    </div>
+    <div class="message-show-main">
+      <div class="message-show-user">
+        <ul>
+          <li>送信者：<%= link_to User.find_by(id: @message.from_id).name, "/users/#{@message.from_id}" %></li>
+          <!--<li>受信者：< link_to User.find_by(id: @message.to_id).name, "/users/#{@message.to_id}" %></li>-->
+        </ul>
+      </div>
+      <div class="message-show-title-main">
+        <p>タイトル：<%= @message.title %></p>
+      </div>
+      <div class="message-show-content">
+        <p><%= @message.content %></p>
+      </div>
+      <div class="message-show-time">
+        <p>メッセージ作成日時：<%= @message.created_at.strftime("%Y/%m/%d/ %H:%M") %></p>
+      </div>
+      <div class="message-show-btn">
+        <ul>
+          <% if @message.to_id == current_user.id %>
+            <li><%= link_to "返信する", "/users/#{@message.from_id}/messages/new" %></li>
+          <% end %>
+          <li><%= link_to "メッセージ一覧に戻る", "/users/#{current_user.id}/messages" %></li>
+          <% if @message.from_id == current_user.id %>
+            <li class="destroy"><%= link_to "削除する", "/users/#{@user.id}/messages/#{@message.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+</div>

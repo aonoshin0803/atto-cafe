@@ -1,0 +1,21 @@
+<div class="photo-show">
+    <div class="photo-show-title">
+        <h2>写真詳細</h2>
+    </div>
+    <div class="photo-show-main">
+      <div class="photo-show-image">
+          <%= image_tag @photo.image, :class => "photo-show-img" %>
+      </div>
+      <div class="photo-show-time">
+          <p>掲載日：<%= @photo.created_at.strftime("%Y/%m/%d") %></p>
+      </div>
+      <div class="photo-show-photo-btn">
+          <ul>
+              <% if @photo.user_id == current_user.id %>
+              <li><%= link_to "写真を削除する", "/shops/#{@shop.id}/photos/#{@photo.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+              <% end %>
+              <li><%= link_to "cafe詳細に戻る", "/shops/#{@shop.id}" %></li>
+          </ul>
+      </div>
+    </div>
+</div>

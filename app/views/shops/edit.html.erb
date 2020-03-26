@@ -1,0 +1,52 @@
+<div class="shop-edit">
+    <div class="shop-edit-title">
+        <h2>cafe情報新規作成</h2>
+    </div>
+    <div class="shop-edit-main">
+        <%= form_for @shop do |s| %>
+          <%= s.hidden_field :user_id, required: true, :value => current_user.id %>
+          <p>店舗名<span>※必須[30文字以内]</span></p>
+          <%= s.text_field :name, :class => "shop-edit-name" %>
+          <p>所在エリア<span>※必須[20文字以内]</span></p>
+          <%= s.text_field :place, :class => "shop-edit-place" %>
+          <p>営業時間<span>※必須</span></p>
+          <%= s.time_field :start_time, :class => "shop-edit-time" %> ～ <%= s.time_field :end_time, :class => "shop-edit-time" %>
+          <p>Wi-Fi<span>※必須</span></p>
+          <%= s.select :wifi, [["有り", "有り"], ["無し", "無し"]], include_blank: "選択してください", :class => "shop-edit-wifi" %>
+          <p>電源<span>※必須</span></p>
+          <%= s.select :outlet, [["有り", "有り"], ["無し", "無し"]], include_blank: "選択してください", :class => "shop-edit-outlet" %>
+          <p>利用者比率（性別）</p>
+          <h4>数値が男女合計「10」になるように比率を設定してください<br>
+          例）女性6：4男性</h4>
+          女性 <%= s.number_field :gender_woman, :class => "shop-edit-gender" %>：<%= s.number_field :gender_man, :class => "shop-edit-gender" %> 男性
+          <p>店内の広さ</p>
+          <h4>5段階評価（1：狭い～5：広い）</h4>
+          <%= s.select :wide, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>スタッフ対応</p>
+          <h4>5段階評価（★1：悪い～★5：良い）</h4>
+          <%= s.select :staff, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>コーヒー豆へのこだわり</p>
+          <h4>5段階評価（★1：弱い～★5：強い）</h4>
+          <%= s.select :beans, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>フードの充実度</p>
+          <h4>5段階評価（★1：少ない～★5：多い）</h4>
+          <%= s.select :food, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>店内の落ち着き度</p>
+          <h4>5段階評価（★1：騒々しい～★5：静か）</h4>
+          <%= s.select :quietness, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>混雑度</p>
+          <h4>5段階評価（★1：混～★5：空）</h4>
+          <%= s.select :congestion, [["1","1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], include_blank: "選択してください", :class => "shop-edit-star" %>
+          <p>その他（補足）<span>※200文字以内</span></p>
+          <%= s.text_area :other, :class => "shop-edit-other" %>
+          <p>店舗イメージ画像</p>
+          <%= s.file_field :image, :class => "shop-edit-image" %>
+          <div class="shop-edit-btn">
+              <ul>
+                  <li><%= s.submit "更新する", :class => "shop-edit-btn-1", data: {confirm: "公開してもよろしいですか？"} %></li>
+                  <li><%= link_to "詳細に戻る", "/shops/#{@shop.id}", :class => "shop-edit-btn-2" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

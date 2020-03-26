@@ -1,0 +1,47 @@
+<div class="schedule-index">
+    <div class="schedule-index-title">
+        <h2>みんなのスケジュール</h2>
+    </div>
+    <div class="schedule-index-btn">
+        <%= link_to "cafeを探す（cafe一覧へ）", "/shops" %>
+    </div>
+    <div class="schedule-index-main">
+        <% if @schedules.present? %>
+          <% @schedules.each do |s| %>
+            <div class="schedule-index-detail">
+                <div class="schedule-index-detail-date">
+                    <ul>
+                        <li>【滞在日】<%= s.join_date.strftime("%Y/%m/%d") %></li>
+                        <li>【滞在時間】<%= s.start_time.strftime("%H:%M") %> ～ <%= s.end_time.strftime("%H:%M") %></li>
+                    </ul>
+                </div>
+                <div class="schedule-index-detail-content">
+                    <% if s.content.present? %>
+                      <p class="present"><%= s.content %></p>
+                    <% else %>
+                      <p class="empty">詳細はありません。</p>
+                    <% end %>
+                </div>
+                <div class="schedule-index-detail-other">
+                    <ul>
+                        <li>予定計画者：<%= link_to User.find_by(id: s.user_id).name, "/users/#{s.user_id}" %></li>
+                        <li>店舗名：<%= link_to Shop.find_by(id: s.shop_id).name, "/shops/#{s.shop_id}" %></li>
+                    </ul>
+                </div>
+                <% if s.user_id == current_user.id %>
+                  <div class="schedule-index-detail-btn">
+                      <ul>
+                          <li><%= link_to "変更する", "/shops/#{s.shop_id}/schedules/#{s.id}/edit" %></li>
+                          <li><%= link_to "削除する", "/shops/#{s.shop_id}/schedules/#{s.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                      </ul>
+                  </div>
+                <% end %>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="schedule-index-empty">
+              <p>現在、スケジュールはありません。</p>
+          </div>
+        <% end %>
+    </div>
+</div>

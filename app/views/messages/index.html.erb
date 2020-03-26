@@ -1,0 +1,39 @@
+<div class="message-index">
+    <div class="message-index-title">
+        <h2>メッセージ一覧</h2>
+    </div>
+    <div class="message-index-main">
+        <% if @messages.present? %>
+          <% @messages.each do |m| %>
+            <div class="message-index-main-present">
+                <div class="message-index-main-user">
+                    <ul>
+                        <li>送信者：<%= link_to User.find_by(id: m.from_id).name, "/users/#{m.from_id}" %></li>
+                        <!--<li>受信者：< link_to User.find_by(id: m.to_id).name, "/users/#{m.to_id}" %>-->
+                        <li>メッセージ作成日時：<%= m.created_at.strftime("%Y/%m/%d %H:%M") %></li>
+                    </ul>
+                </div>
+                <div class="message-index-main-title">
+                    <p>タイトル：<%= m.title %></p>
+                </div>
+                <div class="message-index-main-content">
+                    <p>－本文－</p>
+                    <p class="content"><%= m.content %></p>
+                </div>
+                <div class="message-index-main-btn">
+                    <ul>
+                        <li><%= link_to "メッセージ全文を見る", "/users/#{@user.id}/messages/#{m.id}" %></li>
+                        <% if m.from_id == current_user.id %>
+                          <li><%= link_to "削除する", "/users/#{current_user.id}/messages/#{m.id}", method: "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="message-index-main-empty">
+              <p>メッセージはありません。</p>
+          </div>
+        <% end %>
+    </div>
+</div>

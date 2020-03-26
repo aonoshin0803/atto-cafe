@@ -1,0 +1,419 @@
+// ここからスマホ用サイズ-----------------------------------------------------------------------------
+@media(max-width:767px){
+
+
+
+
+}
+// ここまでがスマホ用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからタブレット用サイズ-----------------------------------------------------------------------------
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+}
+// ここまでがタブレット用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからPC用サイズ-----------------------------------------------------------------------------
+@media(min-width:1025px){
+
+// [message-index]
+.message-index{
+    padding:0;
+    margin:0;
+}
+
+.message-index-title{
+    text-align:center;
+}
+
+.message-index-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.message-index-main{
+    padding:0;
+    margin:0 auto 50px;
+    width:60%;
+}
+
+.message-index-main-present{
+    padding:0;
+    margin:30px 0 0 0;
+    background-color:#eee;
+    border-bottom:3px double #003333;
+    color:#003333;
+}
+
+.message-index-main-user ul{
+    padding:10px 0 0 0;
+    margin:0;
+    list-style:none;
+    border-bottom:1px dotted #003333;
+}
+
+.message-index-main-user li{
+    padding:0;
+    margin:0 20px;
+    display:inline-block;
+}
+
+.message-index-main-user a{
+    color:#003333;
+}
+
+.message-index-main-user a:hover{
+    opacity:0.3;
+}
+
+.message-index-main-title p{
+    padding:5px 0 5px 5px;
+    margin:0;
+    border-bottom:1px solid #003333;
+}
+
+.message-index-main-content{
+    padding:0;
+    margin:10px 0;
+}
+
+.message-index-main-content p{
+    padding:0;
+    margin:0;
+    text-align:center;
+    font-weight:bold;
+}
+
+.message-index-main-content .content{
+    padding:0;
+    margin:10px 5px 0;
+    border-bottom:none;
+    font-weight:normal;
+}
+
+.message-index-main-btn ul{
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style:none;
+}
+
+.message-index-main-btn li{
+    padding:0;
+    margin:0;
+}
+
+.message-index-main-btn a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#003333;
+    display:block;
+    border:1px solid #003333;
+    text-decoration:none;
+}
+
+.message-index-main-btn li:nth-of-type(2) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#f00;
+    display:block;
+    border:1px solid #f00;
+    text-decoration:none;
+}
+
+.message-index-main-btn a:hover{
+    transition:0.3s;
+    color:#008888;
+    background-color:#fff;
+}
+
+.message-index-main-btn li:nth-of-type(2) a:hover{
+    color:#f00;
+    background-color:#fff;
+}
+
+.message-index-main-empty{
+    padding:0;
+    margin:60px 0 0 0;
+    text-align:center;
+}
+
+.message-index-main-empty p{
+    padding:0;
+    margin:0;
+    color:#f00;
+}
+
+
+
+
+
+
+
+// [message-show]
+.message-show{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.message-show-title{
+    text-align:center;
+}
+
+.message-show-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.message-show-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:60%;
+    background-color:#fff;
+}
+
+.message-show-user ul{
+    padding:5px;
+    margin:0;
+    list-style:none;
+    border-bottom:1px dotted #003333;
+}
+
+.message-show-user li{
+    padding:0;
+    margin:0 20px;
+    display:inline-block;
+}
+
+.message-show-user a{
+    color:#003333;
+}
+
+.message-show-user a:hover{
+    opacity:0.3;
+}
+
+.message-show-title-main{
+    padding:0;
+    margin:0;
+    border-bottom:1px solid #003333;
+}
+
+.message-show-title-main p{
+    padding:5px;
+    margin:0;
+}
+
+.message-show-content{
+    padding:5px;
+    margin:0;
+}
+
+.message-show-content p{
+    padding:0;
+    margin:0;
+}
+
+.message-show-time{
+    padding:0;
+    margin:0;
+    border-top:1px dotted #003333;
+    text-align:center;
+}
+
+.message-show-time p{
+    padding:2px;
+    margin:0;
+    font-size:13px;
+}
+
+.message-show-btn ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.message-show-btn li{
+    padding:0;
+    margin:0;
+}
+
+.message-show-btn a{
+    padding:5px;
+    text-decoration:none;
+    display:block;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    color:#fff;
+    background-color:#003333;
+}
+
+.message-show-btn a:hover{
+    transition:0.5s;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+    color:#003333;
+    background-color:#fff;
+}
+
+.message-show-btn .destroy a{
+    background-color:#f00;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+}
+
+.message-show-btn .destroy a:hover{
+    color:#f00;
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+// [message-new]
+.message-new{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.message-new-title{
+    text-align:center;
+}
+
+.message-new-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.message-new-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:60%;
+    background-color:#fff;
+    text-align:center;
+    color:#003333;
+}
+
+.message-new-main p{
+    padding:20px 0 0 0;
+    margin:0;
+}
+
+.message-new-main span{
+    padding:0;
+    margin:0 0 0 10px;
+    color:#f00;
+}
+
+.message-new-name ul{
+    padding:20px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    border-bottom:1px solid #003333;
+}
+
+.message-new-name li{
+    padding:0;
+    margin:0 20px;
+    display:inline-block;
+}
+
+.message-new-name a{
+    text-decoration:none;
+    color:#003333;
+}
+
+.message-new-name a:hover{
+    opacity:0.3;
+}
+
+.message-new-title-main{
+    padding:0;
+    margin:0;
+    width:60%;
+    background-color:#ccffcc;
+}
+
+.message-new-content{
+    padding:0;
+    margin:0;
+    width:60%;
+    height:200px;
+    background-color:#ccffcc;
+}
+
+.message-new-btn{
+    padding:0;
+    margin:60px 0 0;
+}
+
+.message-new-btn ul{
+    padding:10px 0;
+    margin:0;
+    list-style:none;
+    border-top:1px dotted #003333;
+}
+
+.message-new-btn li{
+    padding:0;
+    margin:0 0 20px 0;
+}
+
+.message-new-btn li:nth-of-type(2n){
+    margin:0;
+}
+
+.message-new-btn-1{
+    padding:5px 0;
+    margin:0 auto;
+    width:40%;
+    color:#fff;
+    background-color:#003333;
+    cursor:pointer;
+}
+
+.message-new-btn-1:hover{
+    transition:0.3s;
+    background-color:#8fbc8f;
+}
+
+.message-new-btn-2{
+    color:#003333;
+}
+
+.message-new-btn-2:hover{
+    opacity:0.3;
+}
+
+
+
+}
+// ここまでがPC用サイズ-----------------------------------------------------------------------------

@@ -1,0 +1,50 @@
+<div class="shop-index">
+    <div class="shop-index-title">
+        <h2>cafe一覧</h2>
+    </div>
+    <div class="shop-index-btn">
+        <%= link_to "新規作成する", "/shops/new" %>
+    </div>
+    <div class="shop-index-main">
+        <% if @shops.present? %>
+          <% @shops.each do |s| %>
+            <div class="shop-index-detail">
+                <div class="detail-place-name">
+                    <ul>
+                      <li><%= s.name %></li>
+                      <li><%= s.place %></li>
+                    </ul>
+                </div>
+                <div class="detail-image">
+                  <%= link_to "/shops/#{s.id}" do %>
+                    <% if s.image.present? %>
+                      <%= image_tag s.image, :class => "detail-img" %>
+                    <% else %>
+                      <%= image_tag "no-image.jpg", :class => "detail-img" %>
+                    <% end %>
+                  <% end %>
+                </div>
+                <div class="detail-text">
+                    <ul>
+                        <li>掲載開始日：<%= s.created_at.strftime("%Y/%m/%d") %></li>
+                        <% if s.wifi == "有り" %>
+                          <li class="present"><i class="fas fa-wifi"></i></li>
+                        <% else %>
+                          <li class="nil"><i class="fas fa-wifi"></i></li>
+                        <% end %>
+                        <% if s.outlet == "有り" %>
+                          <li class="present"><i class="fa fa-plug"></i></li>
+                        <% else %>
+                          <li class="nil"><i class="fa fa-plug"></i></li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="empty">
+              <p>情報がありません。</p>
+          </div>
+        <% end %>
+    </div>
+</div>

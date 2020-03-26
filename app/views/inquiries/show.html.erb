@@ -1,0 +1,32 @@
+<div class="inquiry-show">
+    <div class="inquiry-show-title">
+        <h2>メール本文</h2>
+    </div>
+    <div class="inquiry-show-main">
+        <div class="inquiry-show-content-1">
+            <ul>
+                <% if @inquiry.user_id == nil %>
+                  <li class="unmember">名前：<%= @inquiry.name %>さん（非メンバー）</li>
+                <% else %>
+                  <li class="member">名前：<%= @inquiry.name %>さん（メンバー）</li>
+                <% end %>
+                <li>メールアドレス：<%= @inquiry.email %></li>
+            </ul>
+        </div>
+        <div class="inquiry-show-content-2">
+            <p><%= simple_format(@inquiry.content) %></p>
+        </div>
+        <div class="inquiry-show-content-3">
+            <p>受信日：<%= @inquiry.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+        </div>
+        <div class="inquiry-show-btn">
+            <ul>
+                <% if current_user.id == 0 %>
+                  <li><%= link_to "回答する", "/inquiries/#{@inquiry.id}/answers/new", :class => "inquiry-show-btn-1" %></li>
+                <% end %>
+                <li><%= link_to "削除する", "/inquiries/#{@inquiry.id}", method: "delete" , :class => "inquiry-show-btn-2", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                <li><%= link_to "お問い合わせ一覧に戻る", "/inquiries", :class => "inquiry-show-btn-3" %></li>
+            </ul>
+        </div>
+    </div>
+</div>

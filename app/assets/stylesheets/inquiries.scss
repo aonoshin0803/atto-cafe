@@ -1,0 +1,428 @@
+// ここからスマホ用サイズ-----------------------------------------------------------------------------
+@media(max-width:767px){
+
+
+
+
+}
+// ここまでがスマホ用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからタブレット用サイズ-----------------------------------------------------------------------------
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+}
+// ここまでがタブレット用サイズ-----------------------------------------------------------------------------
+
+
+
+
+
+// ここからPC用サイズ-----------------------------------------------------------------------------
+@media(min-width:1025px){
+
+// [inquiry-index]
+.inquiry-index{
+    padding:0;
+    margin:0;
+}
+
+.inquiry-index-title{
+    text-align:center;
+}
+
+.inquiry-index-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.inquiry-index-main{
+    padding:0;
+    margin:0 auto 50px;
+    width:60%;
+}
+
+.inquiry-index-detail{
+    padding:0;
+    margin:30px 0 0 0;
+    background-color:#fff;
+    border-bottom:3px double #003333;
+    color:#003333;
+}
+
+.inquiry-index-content-1 ul{
+    padding:10px 0 0 0;
+    margin:0;
+    list-style:none;
+    border-bottom:1px dotted #003333;
+}
+
+.inquiry-index-content-1 li{
+    padding:0;
+    margin:0 20px;
+}
+
+.inquiry-index-content-1 a{
+    color:#003333;
+}
+
+.inquiry-index-content-2{
+    padding:0;
+    margin:30px 0;
+}
+
+.inquiry-index-content-2 p{
+    padding:5px;
+    margin:0;
+}
+
+.inquiry-index-content-3{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.inquiry-index-content-3 p{
+    padding:0;
+    margin:0 0 0 10px;
+    font-size:13px;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.inquiry-index-content-1 a:hover{
+    opacity:0.3;
+}
+
+.inquiry-index-btn ul{
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style:none;
+}
+
+.inquiry-index-btn li{
+    padding:0;
+    margin:0;
+}
+
+.inquiry-index-btn li:nth-of-type(1) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#003333;
+    display:block;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+    text-decoration:none;
+}
+
+.inquiry-index-btn li:nth-of-type(1) a:hover{
+    transition:0.3s;
+    color:#008888;
+    background-color:#fff;
+}
+
+.inquiry-index-btn li:nth-of-type(2) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#f00;
+    display:block;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+    text-decoration:none;
+}
+
+.inquiry-index-btn li:nth-of-type(2) a:hover{
+    transition:0.3s;
+    color:#f00;
+    background-color:#fff;
+}
+
+.inquiry-index-empty{
+    padding:0;
+    margin:60px 0 0 0;
+    text-align:center;
+}
+
+.inquiry-index-empty p{
+    padding:0;
+    margin:0;
+    color:#f00;
+}
+
+
+
+
+
+
+
+// [inquiry-show]
+.inquiry-show{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.inquiry-show-title{
+    text-align:center;
+}
+
+.inquiry-show-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.inquiry-show-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:60%;
+    background-color:#fff;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+}
+
+.inquiry-show-content-1 ul{
+    padding:10px 0 0 0;
+    margin:0;
+    list-style:none;
+    border-bottom:1px dotted #003333;
+}
+
+.inquiry-show-content-1 li{
+    padding:0;
+    margin:0 20px;
+}
+
+.inquiry-show-content-1 a{
+    color:#003333;
+}
+
+.inquiry-show-content-2{
+    padding:0;
+    margin:30px 0;
+}
+
+.inquiry-show-content-2 p{
+    padding:5px;
+    margin:0;
+}
+
+.inquiry-show-content-3{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.inquiry-show-content-3 p{
+    padding:0;
+    margin:0;
+    font-size:13px;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.inquiry-show-btn ul{
+    padding:0;
+    margin:30px 0;
+    list-style:none;
+    text-align:center;
+}
+
+.inquiry-show-btn li{
+    padding:0;
+    margin:0;
+}
+
+.inquiry-show-btn li:nth-of-type(3){
+    padding:10px 0 0 0;
+}
+
+.inquiry-show-btn-1{
+    padding:5px;
+    text-decoration:none;
+    display:block;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+    color:#fff;
+    background-color:#003333;
+}
+
+.inquiry-show-btn-1:hover{
+    transition:0.5s;
+    color:#003333;
+    background-color:#fff;
+}
+
+.inquiry-show-btn-2{
+    padding:5px;
+    text-decoration:none;
+    display:block;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+    color:#fff;
+    background-color:#f00;
+}
+
+.inquiry-show-btn-2:hover{
+    transition:0.5s;
+    color:#f00;
+    background-color:#fff;
+}
+
+.inquiry-show-btn-3{
+    padding:0;
+    margin:0;
+    color:#003333;
+}
+
+.inquiry-show-btn-3:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+
+
+// [inquiry-new]
+.inquiry-new{
+    padding:0;
+    margin:0;
+    background-image:url(/assets/inquiry-new.jpg);
+    background-position:center 20%;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity:0.8;
+}
+
+.inquiry-new-title{
+    text-align:center;
+}
+
+.inquiry-new-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:60%;
+    color:#003333;
+    text-shadow:1px 1px 0 #fff;
+    border-bottom:3px double #003333;
+}
+
+.inquiry-new-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:60%;
+    background-color:#fff;
+    text-align:center;
+    color:#003333;
+}
+
+.inquiry-new-detail ul{
+    padding:20px 0 0 0;
+    margin:0;
+    list-style:none;
+}
+
+.inquiry-new-detail li{
+    padding:0;
+    margin:0;
+}
+
+.inquiry-new-detail li:nth-of-type(3){
+    margin:30px 0 0 0;
+}
+
+.inquiry-name, .inquiry-email{
+    width:60%;
+    background-color:#ccffcc;
+}
+
+.inquiry-new-detail span{
+    padding:0;
+    margin:0 0 0 10px;
+    color:#f00;
+}
+
+.inquiry-new-content ul{
+    padding:0;
+    margin:50px 0 0 0;
+    list-style:none;
+}
+
+.inquiry-new-content li{
+    padding:0;
+    margin:0;
+}
+
+.inquiry-new-content span{
+    padding:0;
+    margin:0 0 0 10px;
+    color:#f00;
+}
+
+.inquiry-content{
+    width:70%;
+    height:250px;
+    background-color:#ccffcc;
+}
+
+.inquiry-new-btn ul{
+    padding:10px 0 50px;
+    margin:60px 0 0 0;
+    list-style:none;
+    border-top:1px dotted #003333;
+}
+
+.inquiry-new-btn li:nth-of-type(1){
+    padding:0;
+    margin:40px 0 0 0;
+}
+
+.inquiry-new-btn li:nth-of-type(2){
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.inquiry-submit-btn{
+    padding:5px 0;
+    margin:0 auto;
+    width:40%;
+    color:#fff;
+    background-color:#003333;
+    cursor:pointer;
+}
+
+.inquiry-submit-btn:hover{
+    transition:0.3s;
+    background-color:#8fbc8f;
+}
+
+.inquiry-other-btn{
+    color:#003333;
+}
+
+.inquiry-other-btn:hover{
+    opacity:0.3;
+}
+
+
+
+}
+// ここまでがPC用サイズ-----------------------------------------------------------------------------

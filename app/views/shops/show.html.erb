@@ -1,0 +1,200 @@
+<div class="shop-show">
+    <div class="shop-show-title">
+        <h2>cafe詳細</h2>
+    </div>
+    <div class="shop-show-main">
+        <div class="shop-show-name-place">
+            <ul>
+                <li><%= @shop.name %></li>
+                <li><%= @shop.place %></li>
+            </ul>
+        </div>
+      <div class="shop-show-image">
+          <% if @shop.image.present? %>
+            <%= image_tag @shop.image, :class => "shop-show-img" %>
+          <% else %>
+            <%= image_tag "no-image.jpg", :class => "shop-show-img" %>
+          <% end %>
+      </div>
+      <div class="shop-show-detail-1">
+          <ul>
+              <li>掲載開始日：<%= @shop.created_at.strftime("%Y/%m/%d") %></li>
+              <% if @shop.wifi == "有り" %>
+                <li class="present"><i class="fas fa-wifi"></i></li>
+              <% else %>
+                <li class="nil"><i class="fas fa-wifi"></i></li>
+              <% end %>
+              <% if @shop.outlet == "有り" %>
+                <li class="present"><i class="fa fa-plug"></i></li>
+              <% else %>
+                <li class="nil"><i class="fa fa-plug"></i></li>
+              <% end %>
+              <li class="gender"><i class="fas fa-female"></i><%= @shop.gender_woman %>：<%= @shop.gender_man %><i class="fas fa-male"></i></li>
+              <li>掲載者：<%= link_to User.find_by(id: @shop.user_id).name, "/users/#{@shop.user_id}" %></li>
+          </ul>
+      </div>
+      <div class="shop-show-detail-2">
+        <ul>
+          <li>店内の広さ</li>
+          <% if @shop.wide.present? %>
+            <% if @shop.wide == "1" %>
+              <li>★☆☆☆☆（狭い）</li>
+            <% elsif @shop.wide == "2" %>
+              <li>★★☆☆☆（少々狭い）</li>
+            <% elsif @shop.wide == "3" %>
+              <li>★★★☆☆（普通）</li>
+            <% elsif @shop.wide == "4" %>
+              <li>★★★★☆（広い）</li>
+            <% elsif @shop.wide == "5" %>
+              <li>★★★★★（非常に広い）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+        <ul>
+          <li>スタッフ対応</li>
+          <% if @shop.staff.present? %>
+            <% if @shop.staff == "1" %>
+              <li>★☆☆☆☆（悪い）</li>
+            <% elsif @shop.staff == "2" %>
+              <li>★★☆☆☆（あまり良くない）</li>
+            <% elsif @shop.staff == "3" %>
+              <li>★★★☆☆（普通）</li>
+            <% elsif @shop.staff == "4" %>
+              <li>★★★★☆（良い）</li>
+            <% elsif @shop.staff == "5" %>
+              <li>★★★★★（非常に良い）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+        <ul>
+          <li>コーヒー豆へのこだわり</li>
+          <% if @shop.beans.present? %>
+            <% if @shop.beans == "1" %>
+              <li>★☆☆☆☆（ない）</li>
+            <% elsif @shop.beans == "2" %>
+              <li>★★☆☆☆（あまりない）</li>
+            <% elsif @shop.beans == "3" %>
+              <li>★★★☆☆（少々あり）</li>
+            <% elsif @shop.beans == "4" %>
+              <li>★★★★☆（あり）</li>
+            <% elsif @shop.beans == "5" %>
+              <li>★★★★★（非常にあり）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+        <ul>
+          <li>フードの充実度</li>
+          <% if @shop.food.present? %>
+            <% if @shop.food == "1" %>
+              <li>★☆☆☆☆（ほとんど無い）</li>
+            <% elsif @shop.food == "2" %>
+              <li>★★☆☆☆（あまりない）</li>
+            <% elsif @shop.food == "3" %>
+              <li>★★★☆☆（普通）</li>
+            <% elsif @shop.food == "4" %>
+              <li>★★★★☆（充実）</li>
+            <% elsif @shop.food == "5" %>
+              <li>★★★★★（非常に充実）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+        <ul>
+          <li>店内の落ち着き度</li>
+          <% if @shop.quietness.present? %>
+            <% if @shop.quietness == "1" %>
+              <li>★☆☆☆☆（騒々しい）</li>
+            <% elsif @shop.quietness == "2" %>
+              <li>★★☆☆☆（少し騒々しい）</li>
+            <% elsif @shop.quietness == "3" %>
+              <li>★★★☆☆（普通）</li>
+            <% elsif @shop.quietness == "4" %>
+              <li>★★★★☆（静か）</li>
+            <% elsif @shop.quietness == "5" %>
+              <li>★★★★★（非常に静か）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+        <ul>
+          <li>混雑度</li>
+          <% if @shop.congestion.present? %>
+            <% if @shop.congestion == "1" %>
+              <li>★☆☆☆☆（非常に混雑）</li>
+            <% elsif @shop.congestion == "2" %>
+              <li>★★☆☆☆（少し混雑）</li>
+            <% elsif @shop.congestion == "3" %>
+              <li>★★★☆☆（普通）</li>
+            <% elsif @shop.congestion == "4" %>
+              <li>★★★★☆（空いている）</li>
+            <% elsif @shop.congestion == "5" %>
+              <li>★★★★★（非常に空いている）</li>
+            <% else %>
+            <% end %>
+          <% else %>
+            <li>データ無し</li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="shop-show-detail-3">
+        <h4>コメント（補足）</h4>
+        <p><%= @shop.other %></p>
+      </div>
+      <div class="shop-show-detail-4">
+        <ul>
+          <li>掲載開始日：<%= @shop.created_at.strftime("%Y/%m/%d") %></li>
+          <li>更新日：<%= @shop.updated_at.strftime("%Y/%m/%d") %></li>
+        </ul>
+      </div>
+      <div class="shop-show-btn">
+          <ul>
+              <li><%= link_to "このcafeでスケジュールを立てる", "/shops/#{@shop.id}/schedules/new" %></li>
+              <li><%= link_to "cafe一覧へ", "/shops" %></li>
+              <% if @shop.user_id == current_user.id %>
+                <li><%= link_to "編集する", "/shops/#{@shop.id}/edit" %></li>
+              <% end %>
+          </ul>
+      </div>
+    </div>
+    <div class="shop-show-photo">
+       <div class="shop-show-photo-title">
+          <h2>cafe photo library</h2>
+       </div>
+       <div class="shop-show-photo-btn">
+         <% if @shop.user_id == current_user.id %>
+           <%= link_to "写真を投稿する", "/shops/#{@shop.id}/photos/new" %>
+         <% end %>
+       </div>
+       <div class="shop-show-photo-index">
+           <% if @photos.present? %>
+             <% @photos.each do |p| %>
+               <div class="shop-show-photo-image">
+                 <%= image_tag p.image, :class => "shop-show-photo-img" %>
+                 <% if @shop.user_id == current_user.id %>
+                   <div class="shop-show-photo-detail-btn">
+                     <%= link_to "詳細を見る", "/shops/#{@shop.id}/photos/#{p.id}" %>
+                   </div>
+                 <% end %>
+               </div>
+             <% end %>
+           <% else %>
+              <div class="shop-show-photo-empty">
+                <p>まだ写真が投稿されていません。</p>
+              </div>
+           <% end %>
+        </div>
+    </div>
+</div>
