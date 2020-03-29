@@ -1,7 +1,318 @@
 // ここからスマホ用サイズ-----------------------------------------------------------------------------
 @media(max-width:767px){
 
+// [answer-index]
+.answer-index{
+    padding:0;
+    margin:0;
+}
 
+.answer-index-title{
+    text-align:center;
+}
+
+.answer-index-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:95%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.answer-index-main{
+    padding:0;
+    margin:0 auto 50px;
+    width:95%;
+}
+
+.answer-index-detail{
+    padding:0 0 20px;
+    margin:30px 0 0 0;
+    background-color:#eee;
+    color:#003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-index-content-1{
+    padding:0;
+    margin:0 0 10px 0;
+}
+
+.answer-index-content-1 p{
+    padding:5px;
+    margin:0;
+}
+
+.answer-index-content-2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-index-content-2 p{
+    padding:2px;
+    margin:0;
+    font-size:13px;
+}
+
+.answer-index-btn ul{
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style:none;
+}
+
+.answer-index-btn li{
+    padding:0;
+    margin:0;
+}
+
+.answer-index-btn li:nth-of-type(1) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#003333;
+    display:block;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+    text-decoration:none;
+}
+
+.answer-index-btn li:nth-of-type(1) a:hover{
+    transition:0.3s;
+    color:#008888;
+    background-color:#fff;
+}
+
+.answer-index-btn li:nth-of-type(2) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#f00;
+    display:block;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+    text-decoration:none;
+}
+
+.answer-index-btn li:nth-of-type(2) a:hover{
+    transition:0.3s;
+    color:#f00;
+    background-color:#fff;
+}
+
+.answer-index-empty{
+    padding:0;
+    margin:60px 0 0 0;
+    text-align:center;
+}
+
+.answer-index-empty p{
+    padding:0;
+    margin:0;
+    color:#f00;
+}
+
+.answer-index-inquiry-btn{
+    padding:0;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+
+
+
+
+
+// [answer-show]
+.answer-show{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.answer-show-title{
+    text-align:center;
+}
+
+.answer-show-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:95%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.answer-show-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:95%;
+    background-color:#fff;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-show-content-1{
+    padding:10px 0 0 0;
+    margin:0;
+    list-style:none;
+}
+
+.answer-show-content-1 p{
+    padding:5px;
+    margin:0;
+}
+
+.answer-show-content-2{
+    padding:0;
+    margin:30px 0;
+    text-align:center;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-show-content-2 p{
+    padding:2px;
+    margin:0;
+    font-size:13px;
+}
+
+.answer-show-btn ul{
+    padding:0;
+    margin:10px 0;
+    list-style:none;
+    text-align:center;
+}
+
+.answer-show-btn li{
+    padding:0;
+    margin:5px 0;
+    display:block;
+}
+
+.answer-show-btn a:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+
+// [answer-new]
+.answer-new{
+    padding:0;
+    margin:0;
+    background-image:url(/assets/answer-new.jpg);
+    background-position:center 20%;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity:0.8;
+}
+
+.answer-new-title{
+    text-align:center;
+}
+
+.answer-new-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:95%;
+    color:#003333;
+    text-shadow:1px 1px 0 #fff;
+    border-bottom:3px double #003333;
+}
+
+.answer-new-main{
+    padding:0;
+    margin:50px auto;
+    width:95%;
+    background-color:#eee;
+    text-align:center;
+    color:#003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-new-detail{
+    padding:10px 0 0 0;
+    margin:0;
+}
+
+.answer-new-detail > p{
+    padding:0;
+    margin:10px auto;
+    width:40%;
+    text-align:center;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-new-inquiry-text{
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    border-bottom:1px solid #003333;
+}
+
+.answer-new-content p{
+    padding:0;
+    margin:30px 0;
+}
+
+.answer-new-content > .new-email{
+    padding:0;
+    margin:0;
+    width:90%;
+    text-align:center;
+}
+
+.answer-new-content > .new-content{
+    padding:0;
+    margin:0;
+    width:90%;
+    height:300px;
+}
+
+.answer-new-btn ul{
+    padding:10px 0 20px;
+    margin:60px 0 0 0;
+    list-style:none;
+    border-top:1px dotted #003333;
+}
+
+.answer-new-btn li:nth-of-type(1){
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.answer-new-btn li:nth-of-type(2){
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.answer-new-btn-1{
+    padding:5px 0;
+    margin:0 auto;
+    width:100%;
+    color:#fff;
+    background-color:#003333;
+    cursor:pointer;
+}
+
+.answer-new-btn-1:hover{
+    transition:0.3s;
+    background-color:#8fbc8f;
+}
+
+.answer-new-btn-2, .answer-new-btn-3{
+    padding:0;
+    margin:10px 0 0 0;
+    color:#003333;
+    display:inline-block;
+}
 
 
 }
@@ -14,7 +325,318 @@
 // ここからタブレット用サイズ-----------------------------------------------------------------------------
 @media(min-width:768px) and (max-width:1024px){
 
+// [answer-index]
+.answer-index{
+    padding:0;
+    margin:0;
+}
 
+.answer-index-title{
+    text-align:center;
+}
+
+.answer-index-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:80%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.answer-index-main{
+    padding:0;
+    margin:0 auto 50px;
+    width:80%;
+}
+
+.answer-index-detail{
+    padding:0 0 20px;
+    margin:30px 0 0 0;
+    background-color:#eee;
+    color:#003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-index-content-1{
+    padding:0;
+    margin:0 0 10px 0;
+}
+
+.answer-index-content-1 p{
+    padding:5px;
+    margin:0;
+}
+
+.answer-index-content-2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-index-content-2 p{
+    padding:2px;
+    margin:0;
+    font-size:13px;
+}
+
+.answer-index-btn ul{
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style:none;
+}
+
+.answer-index-btn li{
+    padding:0;
+    margin:0;
+}
+
+.answer-index-btn li:nth-of-type(1) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#003333;
+    display:block;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+    text-decoration:none;
+}
+
+.answer-index-btn li:nth-of-type(1) a:hover{
+    transition:0.3s;
+    color:#008888;
+    background-color:#fff;
+}
+
+.answer-index-btn li:nth-of-type(2) a{
+    padding:2px 0;
+    margin:0;
+    color:#fff;
+    background-color:#f00;
+    display:block;
+    border-top:1px solid #f00;
+    border-bottom:1px solid #f00;
+    text-decoration:none;
+}
+
+.answer-index-btn li:nth-of-type(2) a:hover{
+    transition:0.3s;
+    color:#f00;
+    background-color:#fff;
+}
+
+.answer-index-empty{
+    padding:0;
+    margin:60px 0 0 0;
+    text-align:center;
+}
+
+.answer-index-empty p{
+    padding:0;
+    margin:0;
+    color:#f00;
+}
+
+.answer-index-inquiry-btn{
+    padding:0;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+
+
+
+
+
+// [answer-show]
+.answer-show{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.answer-show-title{
+    text-align:center;
+}
+
+.answer-show-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:80%;
+    color:#003333;
+    border-bottom:3px double #003333;
+}
+
+.answer-show-main{
+    padding:0;
+    margin:50px auto 100px;
+    width:80%;
+    background-color:#fff;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-show-content-1{
+    padding:10px 0 0 0;
+    margin:0;
+    list-style:none;
+}
+
+.answer-show-content-1 p{
+    padding:5px;
+    margin:0;
+}
+
+.answer-show-content-2{
+    padding:0;
+    margin:30px 0;
+    text-align:center;
+    border-top:1px dotted #003333;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-show-content-2 p{
+    padding:2px;
+    margin:0;
+    font-size:13px;
+}
+
+.answer-show-btn ul{
+    padding:0;
+    margin:30px 0;
+    list-style:none;
+    text-align:center;
+}
+
+.answer-show-btn li{
+    padding:0;
+    margin:0 10px;
+    display:inline-block;
+}
+
+.answer-show-btn a:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+
+// [answer-new]
+.answer-new{
+    padding:0;
+    margin:0;
+    background-image:url(/assets/answer-new.jpg);
+    background-position:center 20%;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity:0.8;
+}
+
+.answer-new-title{
+    text-align:center;
+}
+
+.answer-new-title h2{
+    padding:50px 0 0 0;
+    margin:0 auto;
+    width:80%;
+    color:#003333;
+    text-shadow:1px 1px 0 #fff;
+    border-bottom:3px double #003333;
+}
+
+.answer-new-main{
+    padding:0;
+    margin:50px auto;
+    width:80%;
+    background-color:#eee;
+    text-align:center;
+    color:#003333;
+    border-bottom:1px solid #003333;
+}
+
+.answer-new-detail{
+    padding:20px 0 0 0;
+    margin:0;
+}
+
+.answer-new-detail > p{
+    padding:0;
+    margin:20px auto;
+    width:40%;
+    text-align:center;
+    border-bottom:1px dotted #003333;
+}
+
+.answer-new-inquiry-text{
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    border-bottom:1px solid #003333;
+}
+
+.answer-new-content p{
+    padding:0;
+    margin:30px 0;
+}
+
+.answer-new-content > .new-email{
+    padding:0;
+    margin:0;
+    width:60%;
+    text-align:center;
+}
+
+.answer-new-content > .new-content{
+    padding:0;
+    margin:0;
+    width:80%;
+    height:300px;
+}
+
+.answer-new-btn ul{
+    padding:10px 0 20px;
+    margin:60px 0 0 0;
+    list-style:none;
+    border-top:1px dotted #003333;
+}
+
+.answer-new-btn li:nth-of-type(1){
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.answer-new-btn li:nth-of-type(2){
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.answer-new-btn-1{
+    padding:5px 0;
+    margin:0 auto;
+    width:70%;
+    color:#fff;
+    background-color:#003333;
+    cursor:pointer;
+}
+
+.answer-new-btn-1:hover{
+    transition:0.3s;
+    background-color:#8fbc8f;
+}
+
+.answer-new-btn-2, .answer-new-btn-3{
+    padding:0;
+    margin:10px 0 0 0;
+    color:#003333;
+    display:inline-block;
+}
 
 
 }
