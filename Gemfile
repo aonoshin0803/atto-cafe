@@ -56,3 +56,5 @@ gem 'font-awesome-sass', '~> 5.4.1'
 gem 'seed-fu', '~> 2.3'
 
 gem 'rails_12factor', group: :production
+
+ruby '2.6.3'
