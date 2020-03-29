@@ -1,6 +1,6 @@
 class Shop < ApplicationRecord
     mount_uploader :image, ImageUploader
-    validates:name, {presence:true, length:{maximum:30}}
+    validates:name, {presence:true, length:{maximum:20}}
     validates:place, {presence:true, length:{maximum:20}}
     validates:start_time, presence:true
     validates:end_time, presence:true
