@@ -69,6 +69,462 @@
 }
 
 
+
+
+
+
+.home-index-content-1{
+    padding:0;
+    margin:150px 0;
+}
+
+.content-1-sub{
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    height:400px;
+    background-image:url(/assets/home-index-content-1.jpg);
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position:center 50%;
+    opacity:0.8;
+}
+
+.content-1-sub h1{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#fff;
+    text-shadow:1px 1px 0 #003333;
+    position:relative;
+    top:30px;
+}
+
+.content-1-sub h1.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.content-1-sub ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:right;
+    position:relative;
+    top:80px;
+    right:10px;
+}
+
+.content-1-sub li{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:20px 0 0 0;
+    color:#fff;
+    font-size:15px;
+    font-weight:bold;
+    text-shadow:1px 1px 0 #003333;
+}
+
+.content-1-sub li.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.home-index-content-2{
+    padding:0;
+    margin:100px 0;
+}
+
+.home-index-content-2 > h2{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0 auto;
+    width:70%;
+    border-bottom:1px dotted #003333;
+    text-align:center;
+    color:#003333;
+}
+
+.home-index-content-2 > h2.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1{
+    padding:0;
+    margin:100px auto 0;
+    width:100%;
+}
+
+.content-2-1-text{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.content-2-1-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-1-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-1-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-image{
+    padding:0;
+    margin:0;
+    height:310px;
+}
+
+.content-2-1-image img{
+    width:100%;
+    height:310px;
+    border:1px solid #003333;
+}
+
+.content-2-1 i{
+    display:none;
+}
+
+.content-2-2{
+    padding:0;
+    margin:100px auto 0;
+    width:100%;
+}
+
+.content-2-2-text{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.content-2-2-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-2-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:28px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-2-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-image{
+    padding:0;
+    margin:0;
+}
+
+.content-2-2-image img{
+    width:100%;
+    height:200px;
+    border:1px solid #003333;
+}
+
+.content-2-3{
+    padding:0;
+    margin:100px auto 0;
+    width:100%;
+}
+
+.content-2-3-text{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.content-2-3-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-3-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-3-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-image{
+    padding:0;
+    margin:0;
+    height:250px;
+}
+
+.content-2-3-image img{
+    width:100%;
+    height:250px;
+    border:1px solid #003333;
+}
+
+.content-2-4{
+    padding:0;
+    margin:100px auto 0;
+    width:100%;
+}
+
+.content-2-4-text{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.content-2-4-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:14px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:10px;
+    left:5px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-4-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-4-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-image{
+    padding:0;
+    margin:0;
+    height:280px;
+}
+
+.content-2-4-image img{
+    width:100%;
+    height:280px;
+    border:1px solid #003333;
+}
+
+.content-2-5{
+    padding:0;
+    margin:100px auto 0;
+    width:100%;
+}
+
+.content-2-5-text{
+    padding:0;
+    margin:0;
+    background-color:#ccffcc;
+}
+
+.content-2-5-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:15px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-5-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:28px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-5-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-image{
+    padding:0;
+    margin:0;
+    height:240px;
+}
+
+.content-2-5-image img{
+    width:100%;
+    height:240px;
+    border:1px solid #003333;
+}
+
+
 }
 // ここまでがスマホ用サイズ-----------------------------------------------------------------------------
 
@@ -143,6 +599,487 @@
 .home-index-btn a:hover{
     transition:0.4s;
     background-color:#66FF99;
+}
+
+
+
+
+
+
+.home-index-content-1{
+    padding:0;
+    margin:100px 0;
+}
+
+.content-1-sub{
+    padding:0;
+    margin:0 auto;
+    width:95%;
+    height:400px;
+    background-image:url(/assets/home-index-content-1.jpg);
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position:center 50%;
+    opacity:0.8;
+}
+
+.content-1-sub h1{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#fff;
+    text-shadow:1px 1px 0 #003333;
+    position:relative;
+    top:60px;
+}
+
+.content-1-sub h1.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.content-1-sub ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:right;
+    position:relative;
+    top:100px;
+    right:20px;
+}
+
+.content-1-sub li{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:20px 0 0 0;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:1px 1px 0 #003333;
+}
+
+.content-1-sub li.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.home-index-content-2{
+    padding:0;
+    margin:100px 0;
+}
+
+.home-index-content-2 > h2{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0 auto;
+    width:40%;
+    border-bottom:1px dotted #003333;
+    text-align:center;
+    color:#003333;
+}
+
+.home-index-content-2 > h2.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.content-2-1-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:350px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-1-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-1-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:10px;
+}
+
+.content-2-1-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:350px;
+    float:left;
+}
+
+.content-2-1-image img{
+    width:100%;
+    height:350px;
+    border:1px solid #003333;
+}
+
+.content-2-1 i{
+    display:none;
+}
+
+.content-2-2{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.content-2-2-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:right;
+    background-color:#ccffcc;
+}
+
+.content-2-2-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:10px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-2-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:28px;
+    color:#003333;
+    position:relative;
+}
+
+.content-2-2-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:right;
+}
+
+.content-2-2-image img{
+    width:100%;
+    height:250px;
+    border:1px solid #003333;
+}
+
+.content-2-3{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.content-2-3-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-3-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:30px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-3-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:30px;
+}
+
+.content-2-3-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:left;
+}
+
+.content-2-3-image img{
+    width:100%;
+    height:250px;
+    border:1px solid #003333;
+}
+
+.content-2-4{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.content-2-4-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:280px;
+    float:right;
+    background-color:#ccffcc;
+}
+
+.content-2-4-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-4-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:30px;
+    color:#003333;
+    position:relative;
+    top:30px;
+}
+
+.content-2-4-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:280px;
+    float:right;
+}
+
+.content-2-4-image img{
+    width:100%;
+    height:280px;
+    border:1px solid #003333;
+}
+
+.content-2-5{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.content-2-5-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-5-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:17px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:20px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-5-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:28px;
+    color:#003333;
+    position:relative;
+    top:20px;
+}
+
+.content-2-5-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:250px;
+    float:left;
+}
+
+.content-2-5-image img{
+    width:100%;
+    height:250px;
+    border:1px solid #003333;
 }
 
 
@@ -228,6 +1165,490 @@
     transition:0.4s;
     background-color:#66FF99;
 }
+
+
+
+.home-index-content-1{
+    padding:0;
+    margin:100px 0;
+}
+
+.content-1-sub{
+    padding:0;
+    margin:0 auto;
+    width:70%;
+    height:500px;
+    background-image:url(/assets/home-index-content-1.jpg);
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position:center 50%;
+    opacity:0.8;
+}
+
+.content-1-sub h1{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#fff;
+    text-shadow:1px 1px 0 #003333;
+    position:relative;
+    top:80px;
+}
+
+.content-1-sub h1.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.content-1-sub ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:right;
+    position:relative;
+    top:140px;
+    right:20px;
+}
+
+.content-1-sub li{
+    // jQuery----------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery----------------------------------
+    padding:0;
+    margin:20px 0 0 0;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:1px 1px 0 #003333;
+}
+
+.content-1-sub li.scroll{
+    // jQuery----------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery----------------------------------
+}
+
+.home-index-content-2{
+    padding:0;
+    margin:100px 0;
+}
+
+.home-index-content-2 > h2{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0 auto;
+    width:30%;
+    border-bottom:1px dotted #003333;
+    text-align:center;
+    color:#003333;
+}
+
+.home-index-content-2 > h2.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.content-2-1-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:400px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-1-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:40px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-1-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:40px;
+    color:#003333;
+    position:relative;
+    top:70px;
+}
+
+.content-2-1-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-1-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:400px;
+    float:left;
+}
+
+.content-2-1-image img{
+    width:100%;
+    height:400px;
+    border:1px solid #003333;
+}
+
+.content-2-1 i{
+    font-size:25px;
+    color:#003333;
+    position:relative;
+    top:100px;
+    right:70px;
+}
+
+.content-2-2{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.content-2-2-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:300px;
+    float:right;
+    background-color:#ccffcc;
+}
+
+.content-2-2-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:30px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-2-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:40px;
+    color:#003333;
+    position:relative;
+    top:40px;
+}
+
+.content-2-2-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-2-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:300px;
+    float:right;
+}
+
+.content-2-2-image img{
+    width:100%;
+    height:300px;
+    border:1px solid #003333;
+}
+
+.content-2-3{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.content-2-3-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:320px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-3-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:40px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-3-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:40px;
+    color:#003333;
+    position:relative;
+    top:70px;
+}
+
+.content-2-3-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-3-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:320px;
+    float:left;
+}
+
+.content-2-3-image img{
+    width:100%;
+    height:320px;
+    border:1px solid #003333;
+}
+
+.content-2-4{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.content-2-4-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:340px;
+    float:right;
+    background-color:#ccffcc;
+}
+
+.content-2-4-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:40px;
+    left:10px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-4-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:40px;
+    color:#003333;
+    position:relative;
+    top:70px;
+}
+
+.content-2-4-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-4-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:340px;
+    float:right;
+}
+
+.content-2-4-image img{
+    width:100%;
+    height:340px;
+    border:1px solid #003333;
+}
+
+.content-2-5{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.content-2-5-text{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:320px;
+    float:left;
+    background-color:#ccffcc;
+}
+
+.content-2-5-text span{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:0;
+    color:#003333;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:2px 2px 0 #fff;
+    position:relative;
+    top:40px;
+    left:20px;
+    border-bottom:3px double #003333;
+}
+
+.content-2-5-text span.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-text p{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:20px;
+    margin:0;
+    line-height:40px;
+    color:#003333;
+    position:relative;
+    top:70px;
+}
+
+.content-2-5-text p.scroll{
+    // jQuery--------------------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.content-2-5-image{
+    padding:0;
+    margin:0 auto;
+    width:49%;
+    height:320px;
+    float:left;
+}
+
+.content-2-5-image img{
+    width:100%;
+    height:320px;
+    border:1px solid #003333;
+}
+
 
 }
 // ここまでがPC用サイズ-----------------------------------------------------------------------------
