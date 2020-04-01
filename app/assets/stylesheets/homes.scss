@@ -42,30 +42,7 @@
     color:#003333;
     text-shadow:1px 1px 0 #fff;
     font-size:20px;
-}
-
-.home-index-btn{
-    padding:0;
-    margin:0;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, 400%);
-}
-
-.home-index-btn a{
-    padding:10px 50px;
-    margin:0;
-    text-decoration:none;
-    color:#003333;
-    font-weight:bold;
-    background-color:#fff;
-    border:1px solid #003333;
-}
-
-.home-index-btn a:hover{
-    transition:0.4s;
-    background-color:#66FF99;
+    border-bottom:3px dotted #003333;
 }
 
 
@@ -175,6 +152,8 @@
     padding:0;
     margin:100px auto 0;
     width:100%;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
 }
 
 .content-2-1-text{
@@ -238,7 +217,6 @@
 .content-2-1-image img{
     width:100%;
     height:310px;
-    border:1px solid #003333;
 }
 
 .content-2-1 i{
@@ -249,6 +227,8 @@
     padding:0;
     margin:100px auto 0;
     width:100%;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
 }
 
 .content-2-2-text{
@@ -311,13 +291,14 @@
 .content-2-2-image img{
     width:100%;
     height:200px;
-    border:1px solid #003333;
 }
 
 .content-2-3{
     padding:0;
     margin:100px auto 0;
     width:100%;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
 }
 
 .content-2-3-text{
@@ -381,13 +362,14 @@
 .content-2-3-image img{
     width:100%;
     height:250px;
-    border:1px solid #003333;
 }
 
 .content-2-4{
     padding:0;
     margin:100px auto 0;
     width:100%;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
 }
 
 .content-2-4-text{
@@ -451,13 +433,14 @@
 .content-2-4-image img{
     width:100%;
     height:280px;
-    border:1px solid #003333;
 }
 
 .content-2-5{
     padding:0;
     margin:100px auto 0;
     width:100%;
+    border-top:1px solid #003333;
+    border-bottom:1px solid #003333;
 }
 
 .content-2-5-text{
@@ -521,7 +504,153 @@
 .content-2-5-image img{
     width:100%;
     height:240px;
+}
+
+
+
+
+.home-index-btn-area{
+    padding:0;
+    margin:100px 0 200px;
+    height:550px;
+    background-image:url(/assets/btn-area.jpg);
+    background-position:center 60%;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+.btn-area-login{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto 0;
+    width:80%;
+    height:110px;
+    background-color:#ccffcc;
+    text-align:center;
     border:1px solid #003333;
+}
+
+.btn-area-login.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-login p{
+    padding:20px 0;
+    margin:0;
+    color:#003333;
+}
+
+.btn-area-login a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-login a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-sign-up{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto 0;
+    width:80%;
+    height:110px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+}
+
+.btn-area-sign-up.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-sign-up p{
+    padding:20px 0;
+    margin:0;
+    color:#003333;
+}
+
+.btn-area-sign-up a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-sign-up a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-contact{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto 0;
+    width:80%;
+    height:110px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+}
+
+.btn-area-contact.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-contact p{
+    padding:20px 0;
+    margin:0;
+    color:#003333;
+}
+
+.btn-area-contact a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-contact a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
 }
 
 
@@ -575,31 +704,9 @@
     transform:translate(-50%, -900%);
     color:#003333;
     text-shadow:1px 1px 0 #fff;
+    border-bottom:3px dotted #003333;
 }
 
-.home-index-btn{
-    padding:0;
-    margin:0;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -300%);
-}
-
-.home-index-btn a{
-    padding:10px 100px;
-    margin:0;
-    text-decoration:none;
-    color:#003333;
-    font-weight:bold;
-    background-color:#fff;
-    border:1px solid #003333;
-}
-
-.home-index-btn a:hover{
-    transition:0.4s;
-    background-color:#66FF99;
-}
 
 
 
@@ -1084,6 +1191,157 @@
 
 
 
+
+
+.home-index-btn-area{
+    padding:0;
+    margin:100px 0 200px;
+    height:600px;
+    background-image:url(/assets/btn-area.jpg);
+    background-position:center 60%;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+.btn-area-login{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto;
+    width:70%;
+    height:130px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+}
+
+.btn-area-login.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-login p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-login a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-login a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-sign-up{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto;
+    width:70%;
+    height:130px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+}
+
+.btn-area-sign-up.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-sign-up p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-sign-up a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-sign-up a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-contact{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:50px auto;
+    width:70%;
+    height:130px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+}
+
+.btn-area-contact.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-contact p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-contact a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-contact a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+
+
 }
 // ここまでがタブレット用サイズ-----------------------------------------------------------------------------
 
@@ -1140,31 +1398,12 @@
     transform:translate(-50%, -900%);
     color:#003333;
     text-shadow:1px 1px 0 #fff;
+    border-bottom:3px dotted #003333;
 }
 
-.home-index-btn{
-    padding:0;
-    margin:0;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, 800%);
-}
 
-.home-index-btn a{
-    padding:10px 100px;
-    margin:0;
-    text-decoration:none;
-    color:#003333;
-    font-weight:bold;
-    background-color:#fff;
-    border:1px solid #003333;
-}
 
-.home-index-btn a:hover{
-    transition:0.4s;
-    background-color:#66FF99;
-}
+
 
 
 
@@ -1649,6 +1888,155 @@
     border:1px solid #003333;
 }
 
+.home-index-btn-area{
+    padding:0;
+    margin:100px 0 200px;
+    height:400px;
+    background-image:url(/assets/btn-area.jpg);
+    background-position:center 60%;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+.btn-area-login{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:130px auto 0 23px;
+    width:30%;
+    height:150px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+    display:inline-block;
+}
+
+.btn-area-login.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-login p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-login a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-login a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-sign-up{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:130px auto 0 23px;
+    width:30%;
+    height:150px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+    display:inline-block;
+}
+
+.btn-area-sign-up.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-sign-up p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-sign-up a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-sign-up a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
+
+.btn-area-contact{
+    // jQuery--------------------------------------
+    transition:1.5s;
+    opacity:0;
+    transform:translate(0, 20px);
+    // jQuery--------------------------------------
+    padding:0;
+    margin:130px auto 0 23px;
+    width:30%;
+    height:150px;
+    background-color:#ccffcc;
+    text-align:center;
+    border:1px solid #003333;
+    display:inline-block;
+}
+
+.btn-area-contact.scroll{
+    // jQuery--------------------------------------
+    opacity:0.9;
+    transform:translate(0, 0);
+    // jQuery--------------------------------------
+}
+
+.btn-area-contact p{
+    padding:30px 0;
+    margin:0;
+    color:#003333;
+    font-weight:bold;
+}
+
+.btn-area-contact a{
+    padding:5px 80px;
+    margin:0;
+    text-decoration:none;
+    color:#003333;
+    background-color:#fff;
+    font-weight:bold;
+    border:1px solid #003333;
+}
+
+.btn-area-contact a:hover{
+    transition:0.5s;
+    color:#fff;
+    background-color:#003333;
+}
 
 }
 // ここまでがPC用サイズ-----------------------------------------------------------------------------

@@ -169,32 +169,32 @@
           </ul>
       </div>
     </div>
-    <div class="shop-show-photo">
-       <div class="shop-show-photo-title">
-          <h2>cafe photo library</h2>
-       </div>
-       <div class="shop-show-photo-btn">
-         <% if @shop.user_id == current_user.id %>
-           <%= link_to "写真を投稿する", "/shops/#{@shop.id}/photos/new" %>
-         <% end %>
-       </div>
-       <div class="shop-show-photo-index">
-           <% if @photos.present? %>
-             <% @photos.each do |p| %>
-               <div class="shop-show-photo-image">
-                 <%= image_tag p.image, :class => "shop-show-photo-img" %>
-                 <% if @shop.user_id == current_user.id %>
-                   <div class="shop-show-photo-detail-btn">
-                     <%= link_to "詳細を見る", "/shops/#{@shop.id}/photos/#{p.id}" %>
-                   </div>
-                 <% end %>
-               </div>
-             <% end %>
-           <% else %>
-              <div class="shop-show-photo-empty">
-                <p>まだ写真が投稿されていません。</p>
-              </div>
-           <% end %>
-        </div>
-    </div>
+    <!--<div class="shop-show-photo">-->
+    <!--   <div class="shop-show-photo-title">-->
+    <!--      <h2>cafe photo library</h2>-->
+    <!--   </div>-->
+    <!--   <div class="shop-show-photo-btn">-->
+    <!--     < if @shop.user_id == current_user.id %>-->
+    <!--       < link_to "写真を投稿する", "/shops/#{@shop.id}/photos/new" %>-->
+    <!--     < end %>-->
+    <!--   </div>-->
+       <!--<div class="shop-show-photo-index">-->
+       <!--    < if @photos.present? %>-->
+       <!--      < @photos.each do |p| %>-->
+       <!--        <div class="shop-show-photo-image">-->
+       <!--          < image_tag p.image, :class => "shop-show-photo-img" %>-->
+       <!--          < if @shop.user_id == current_user.id %>-->
+       <!--            <div class="shop-show-photo-detail-btn">-->
+       <!--              < link_to "詳細を見る", "/shops/#{@shop.id}/photos/#{p.id}" %>-->
+       <!--            </div>-->
+       <!--          < end %>-->
+       <!--        </div>-->
+       <!--      < end %>-->
+       <!--    < else %>-->
+       <!--       <div class="shop-show-photo-empty">-->
+       <!--         <p>まだ写真が投稿されていません。</p>-->
+       <!--       </div>-->
+       <!--    < end %>-->
+       <!-- </div>-->
+    <!--</div>-->
 </div>

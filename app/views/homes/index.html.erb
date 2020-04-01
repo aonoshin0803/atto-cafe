@@ -4,9 +4,6 @@
      <h1>@cafe</h1>
      <h2>人生を変えるキッカケはカフェから</h2>
 </div>
-<div class="home-index-btn">
-    <%= link_to "新規登録", "/users/sign_up" %>
-</div>
 
 <div class="home-index-content-1">
     <div class="content-1-sub">
@@ -75,5 +72,20 @@
         <div class="content-2-5-image">
             <img src="/assets/profile.jpg">
         </div>
+    </div>
+</div>
+
+<div class="home-index-btn-area">
+    <div class="btn-area-login">
+        <p>既に会員登録済みの方はこちら</p>
+        <%= link_to "ログイン", "/users/sign_in" %>
+    </div>
+    <div class="btn-area-sign-up">
+        <p>新規登録ご希望の方はこちら</p>
+        <%= link_to "新規登録", "/users/sign_up" %>
+    </div>
+    <div class="btn-area-contact">
+        <p>お問い合わせご希望の方はこちら</p>
+        <%= link_to "お問い合わせ", "/inquiries/new" %>
     </div>
 </div>
